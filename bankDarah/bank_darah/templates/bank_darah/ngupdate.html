@@ -1,0 +1,8 @@
+<form method="post" action="">
+    {% csrf_token %}
+    <input type="text" name="name" value="{{ user.nama }}">
+    <input type="text" name="pekerjaan" value="{{ user.pekerjaan }}">
+    <input type="text" name="nomor_hp" value="{{ user.nomor_hp }}">
+    <input type="email" name="email" value="{{ user.email }}">
+    <button type="submit">Update</button>
+</form>

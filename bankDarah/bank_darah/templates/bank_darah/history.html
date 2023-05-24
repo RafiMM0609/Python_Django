@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+      body,h1 {font-family: "Raleway", sans-serif}
+      body, html {height: 100%}
+    h1 {
+        text-shadow: 1px 2px #ffffff;
+      }
+    .nice{
+        text-shadow: 1px 2px #f7f7f7;
+    }
+    div {
+    height: device-widthpx;
+    background: linear-gradient(to top right, red, rgba(0, 219, 248, 0.932) );
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 55px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #11b5e7;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    .button:hover {background-color: #b93131}
+    .button:active {
+      background-color: #ffffff;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    .button1 {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .box {
+      border-radius: 10px;
+      width: 98%;
+      height: 30%;  
+      padding: 5px;
+      border: 0px solid rgb(255, 255, 255);
+      box-sizing: border-box;
+      text-align: center;
+   }.bgimg {
+      background-image: url('https://github.com/RafiMM0609/ESP8266_WebServer_Relay-SonOff-/blob/main/Pictures/rm209-ning-20-g.jpg?raw=true');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+  }
+      </style>
+    <title>Frelo</title>
+  </head>
+  <body bgcolor="white">
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <h2 align="center">
+      <img src="https://www.telkom.co.id/data/image_upload/page/1594108255409_compress_logo%20telkom%20indonesia.png" alt="Simply Easy Learning" width="260" height="200">
+    </h2>
+    <h1 align="center"><font size="6" color="#262626">HISTORY</font></h1>
+        <h1 align="center"><font  size="5" color="#262626" style="font-family: Trebuchet MS">Berbagi darah menyelamatkan diri anda dan orang lain</font></h2>
+        <font class="nice" color="#262626" style="font-family: Trebuchet MS">
+          <table border="0" align="center">
+            <tbody>
+              {% for user in users %}                
+              <tr height="30px"><td><strong>Id: {{ user.user_id }}</strong></td></tr>
+              <tr height="30px"><td><strong>Name: {{ user.nama }}</strong></td></tr>
+              <tr height="30px"><td><strong>Pekerjaan: {{ user.pekerjaan }}</strong></td></tr>
+              <tr height="30px"><td><strong>Nomor HP: {{ user.nomor_hp }}</strong></td></tr>
+              <tr height="30px"><td><strong>Email: {{ user.email }}</strong></td></tr>
+              <tr height="30px"><td><strong>Golongan Darah: {{ user.golongan_darah }}</strong></td></tr>
+              <tr height="30px"><td><a href="{{ user.user_id }}/delete/"><button  name="delete" value="Delete">Delete</button></a></td></tr>
+              <tr height="30px"><td><a href="{{ user.user_id }}/update/"><button  name="update" value="Update">Update</button></a></td></tr>
+              {% endfor %}
+              </tbody>
+          </table>
+        </font>
+        </div>
+        </body>
+</html>

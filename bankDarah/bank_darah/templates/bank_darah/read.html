@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HISTORY</title>
+</head>
+<body>
+{% for user in users %}
+    <p>Id: {{ user.user_id }}</p>
+    <p>Name: {{ user.nama }}</p>
+    <p>Pekerjaan: {{ user.pekerjaan }}</p>
+    <p>Nomor HP: {{ user.nomor_hp }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Golongan Darah: {{ user.golongan_darah }}</p>
+{% endfor %}
+{% for user in users %}
+    <a href="{{ user.user_id }}/delete/"><button method="POST" type="submit" name="update" value="{{ user.user_id }}">{{ user.nama }}</button></a>
+{% endfor %}
+</body>
+</html>

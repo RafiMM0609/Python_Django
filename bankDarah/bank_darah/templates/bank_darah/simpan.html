@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pengguna</title>
+</head>
+<body>
+    <h1>Formulir Pengguna</h1>
+    <form method="POST" action="{% url 'simpan_pengguna' %}">
+        {% csrf_token %}
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" id="nama" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <input type="submit" value="Simpan">
+    </form>
+    <a href="{% url 'user_list' %}"><button>history</button>
+</body>
+</html>
