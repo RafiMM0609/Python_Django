@@ -49,4 +49,13 @@ def home(request):
 def login(request):
     return render(request , 'bank_darah/login.html')
 
+def math(aku):
+    if aku == 'giat':
+       nilai = berhasil
+       return nilai
+    else:
+       nilai = 'gagal'
+       return nilai
+math(giat)
 
+ 
