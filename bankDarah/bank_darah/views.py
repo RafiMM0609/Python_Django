@@ -58,4 +58,13 @@ def math(aku):
        return nilai
 math(giat)
 
+def study(pilih):
+    if pilih == 'konsisten':
+       nilai = 'bertahap'
+       return nilai
+    else:
+       nilai='nt'
+       return nilai
+study(konsisten)
+
  
