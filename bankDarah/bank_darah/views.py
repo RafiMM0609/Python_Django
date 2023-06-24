@@ -63,8 +63,8 @@ def study(pilih):
        nilai = 'bertahap'
        return nilai
     else:
-       nilai='nt'
+       nilai='yakin'
        return nilai
-study(konsisten)
+study(bisa)
 
  
