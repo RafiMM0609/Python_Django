@@ -67,4 +67,7 @@ def study(pilih):
        return nilai
 study(bisa)
 
+def hijau(input):
+    return input
+
  
